@@ -1,0 +1,6 @@
+.idea
+simp.h
+simp_*
+*.o
+server
+client
