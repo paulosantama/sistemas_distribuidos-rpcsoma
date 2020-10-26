@@ -26,8 +26,8 @@ not show up in the .h file produced by rpcgen.
    both of my remote procedures */
 
 struct operands {
-	int x;
-	int y;
+	float x;
+	float y;
 };
 
 
@@ -45,8 +45,10 @@ definitions. Remember this is not C, although it looks similar */
 
 program SIMP_PROG {
    version SIMP_VERSION {
-     int ADD(operands) = 1;
-     int SUB(operands) = 2;
+     float ADD(operands) = 1;
+     float SUB(operands) = 2;
+     float MULTI(operands) = 3;
+     float DIV(operands) = 4;
    } = VERSION_NUMBER;
 } = 555555555;
 
